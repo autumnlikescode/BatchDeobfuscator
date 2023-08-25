@@ -1,6 +1,6 @@
 # Batch Deobfuscation Script
 
-This repository contains a batch script designed to deobfuscate other batch files that have been obfuscated using the `certutil` command. The script reverses the obfuscation process and reconstructs the original batch file.
+This repository contains a batch script designed to deobfuscate other batch files that have been obfuscated using the `certutil` method. The script reverses the obfuscation process and reconstructs the original batch file.
 
 ## How It Works
 
