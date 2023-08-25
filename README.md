@@ -15,19 +15,17 @@ The deobfuscation script works by:
 
 ## Usage
 
-1. Clone or download this repository to your local machine.
+1. Download Deobfuscator to local machine
 
-2. Open a command prompt or terminal.
+2. Place the deobfuscator and obfuscated file into the same directory
 
-3. Navigate to the directory where the repository is located.
+3. Drag and drop the obfuscated file onto the deobfuscator.bat
 
-4. Drag and drop the obfuscated file onto the deobfuscator.bat
+4. The script will display the deobfuscated content on the console and create a temporary deobfuscated file in the same directory as the obfuscated file, named `obfuscatedname_deobfed.bat||.cmd`.
 
-5. The script will display the deobfuscated content on the console and create a temporary deobfuscated file in the same directory as the obfuscated file, named `obfuscatedname_deobfed.bat||.cmd`.
+5. Review the deobfuscated content and make sure it matches the expected original batch file.
 
-6. Review the deobfuscated content and make sure it matches the expected original batch file.
-
-7. **Note:** Be cautious when dealing with batch files from untrusted sources, as they can potentially contain malicious code.
+6. **Note:** Be cautious when dealing with batch files from untrusted sources, as they can potentially contain malicious code.
 
 
 ## License
