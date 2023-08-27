@@ -52,7 +52,7 @@ Here's how the decoding part of the script works:
 
 1. **Decoding Loop**
 
-    A loop is initiated to decode and execute the code a set number of times, which can be adjusted to match the obfuscator's complexity value. Each iteration aims to unveil one layer of obfuscation, gradually revealing the original code. For example is you put in an iteration of 30 and the complexity was 50, you will have 20 layers that still need to be decoded. An easy way to fix this is set the iteration level very high 100+
+    A loop is initiated to decode and execute the code a set number of times, which can be adjusted to match the obfuscator's complexity value. Each iteration aims to unveil one layer of obfuscation, gradually revealing the original code. For example is you put in an iteration of 30 and the complexity was 50, you will have 20 layers that still need to be decoded. An easy way to fix this is set the iteration level very high 100+. You can tell if there is still layers that required to be decoded you can tell by still seeing the bytes in the output of the disassembly.
 
     ```python
     for i in range(iterations):
