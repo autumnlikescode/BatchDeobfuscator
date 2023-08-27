@@ -164,7 +164,7 @@ print(dis.dis(ran))
 For more information on disassembling bytecode and understanding code obfuscation, check out the following resources:
 
 - Python `dis` module documentation: [link](https://docs.python.org/3/library/dis.html)
-- Pyfuscate GitHub repository: [link](https://github.com/astrand/pyfuscate)
+- Pyfuscate GitHub repository: [link]([https://github.com/astrand/pyfuscate](https://github.com/Sl-Sanda-Ru/Py-Fuscate))
 
 Keep exploring and unraveling the mysteries of code!
 
