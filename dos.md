@@ -111,7 +111,7 @@ Here's how the decoding part of the script works:
     ```python
     except Exception as e:
         print(e)
-        print("[!] are we at a new style of code?")
+        print("something happened")
     ```
 
 8. **Final Output**
