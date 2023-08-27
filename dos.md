@@ -25,7 +25,7 @@ while True:
 
 ### Obfuscated Code
 
-For reference, here is the obfuscated code, the bytes are truncated as they are too large and will take up the entire page.
+For reference, here is the obfuscated code, the bytes are truncated as they are too large:
 
 ```python
 # Encoded By Py-Fuscate
