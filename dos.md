@@ -1,7 +1,5 @@
 **Decoding Python Obfuscation (Pyfuscate): A Step-by-Step Guide**
 
-![Image: Obfuscated Python Code](image_link_here)
-
 *Unraveling the Layers of Obfuscated Python Code*
 
 ---
@@ -16,16 +14,40 @@ Python, known for its readability and simplicity, can sometimes take on a differ
 - Familiarity with bytecode and Python's `marshal` module
 - Knowledge of code disassembly using Python's `dis` module
 
+### Original Code
+
+For reference, here is the original code that was obfuscated:
+
+```python
+while True:
+    print("flow 1 for 1")
+```
+
+### Obfuscated Code
+
+For reference, here is the obfuscated code, the bytes are truncated as they are too large and will take up the entire page.
+
+```python
+# Encoded By Py-Fuscate
+# https://github.com/Sl-Sanda-Ru/Py-Fuscate
+# Make Sure You're Running The Program With python3.8 Otherwise It May Crash
+# To Check Your Python Version Run "python -V" Command
+try:
+	import marshal,lzma,gzip,bz2,binascii,zlib;exec(marshal.loads(zlib.decompress(b'x\x9c\xb4\x96C\x8c0\x0c\xd0\xa4\xc7\xb6m\xdb\xb6m\xfb\x1d\xdb\xb6m\xdb\xb6m\xdb\xb6m{\xf6\xdb\x7fo\x9b\xecq;\xe9z\x0e\x9dT*\xa9K\x1b\x01\xfc_\x03\xf6\xdf\n\xfc\xb7N\x12\xff\x891\x801\xa05\x80\xd6\xff!\xa0\x16\xe0...rest of compressed bytes]')))
+except KeyboardInterrupt:
+	exit()
+```
+
 ### Decoding the Obfuscated Code
 
 Here's how the decoding part of the script works:
 
 1. **Decoding Loop**
 
-    A loop is initiated to decode and execute the code 50 times. Each iteration aims to unveil one layer of obfuscation, gradually revealing the original code.
+    A loop is initiated to decode and execute the code a set number of times, which can be adjusted to match the obfuscator's complexity value. Each iteration aims to unveil one layer of obfuscation, gradually revealing the original code.
 
     ```python
-    for i in range(50):
+    for i in range(iterations):
     ```
 
 2. **Disassembling the Bytecode**
@@ -86,7 +108,7 @@ Here's how the decoding part of the script works:
 
 8. **Final Output**
 
-    After completing 50 iterations, the final result of the decoded and executed code is printed. Additionally, the bytecode instructions of the final result are displayed using `dis.dis(ran)`.
+    After completing the specified number of iterations, the final result of the decoded and executed code is printed. Additionally, the bytecode instructions of the final result are displayed using `dis.dis(ran)`.
 
     ```python
     print(ran)
@@ -96,6 +118,14 @@ Here's how the decoding part of the script works:
 ### Conclusion
 
 Decoding obfuscated Python code can be a challenging yet rewarding endeavor. By understanding the underlying techniques employed in obfuscation and leveraging Python's built-in modules, we can systematically peel away the layers of obfuscation and uncover the true nature of the code. The process serves as an excellent exercise in code analysis, bytecode manipulation, and creative problem-solving.
+
+### Full Decoding Script
+
+For your convenience, here's the full decoding script used in this guide:
+
+```python
+# Insert full decoding script here
+```
 
 ### Additional Resources
 
