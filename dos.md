@@ -38,6 +38,14 @@ except KeyboardInterrupt:
 	exit()
 ```
 
+### Reconstruct before decoding
+
+First we will reconstruct the python file to set it up, to be ready for decoding.
+```python
+import marshal,lzma,gzip,bz2,binascii,zlib
+ran = marshal.loads(zlib.decompress(b'x\x9c\xb4\x96C\x8c0\x0c\xd0\xa4\xc7\xb6m\xdb\xb6m\xfb\x1d\xdb\xb6m\xdb\xb6m\xdb\xb6m{\xf6\xdb\x7fo\x9b\xecq;\xe9z\x0e\x9dT*\xa9K\x1b\x01\xfc_\x03\xf6\xdf\n\xfc\xb7N\x12\xff\x891\x801\xa05\x80\xd6\xff!\xa0\x16\xe0...rest of compressed bytes]'))
+```
+
 ### Decoding the Obfuscated Code
 
 Here's how the decoding part of the script works:
